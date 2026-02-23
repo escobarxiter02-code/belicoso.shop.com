@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BELICOSO SHOP | AIMBOT PROXY</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg,#1a0000,#2b0000);
+            color:#fff;
+            text-align:center;
+        }
+
+        header{
+            padding:50px 20px 20px;
+        }
+
+        h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
+
+        h2{
+            color:#ff2b2b;
+            font-weight:normal;
+            margin-bottom:30px;
+            text-shadow:0 0 10px rgba(255,0,0,.6);
+        }
+
+        /* TARJETAS */
+        .card{
+            background:#1b0a0a;
+            width:90%;
+            max-width:400px;
+            margin:20px auto;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 0 18px rgba(255,0,0,.35);
+        }
+
+        /* INPUT */
+        input{
+            width:90%;
+            padding:12px;
+            margin-top:10px;
+            border-radius:8px;
+            border:none;
+            font-size:16px;
+            background:#2a0f0f;
+            color:white;
+        }
+
+        /* BOTÓN ROJO */
+        button{
+            margin-top:15px;
+            width:95%;
+            padding:12px;
+            background:#ff2b2b;
+            border:none;
+            border-radius:8px;
+            font-weight:bold;
+            color:white;
+            cursor:pointer;
+            transition:.2s;
+        }
+
+        button:hover{
+            background:#cc0000;
+            transform:scale(1.03);
+        }
+
+        /* LINKS */
+        .links a{
+            display:block;
+            margin:10px 0;
+            color:#ff4d4d;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .links a:hover{
+            text-decoration:underline;
+        }
+
+        footer{
+            margin-top:40px;
+            padding:15px;
+            font-size:12px;
+            color:#aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BELICOSO SHOP</h1>
+    <h2>AIMBOT PROXY</h2>
+    <p>REGISTRA TU UID VIP</p>
+</header>
+
+<div class="card">
+
+    <form id="registerForm">
+        <label>UID DEL JUGADOR</label><br>
+
+        <input
+            type="text"
+            id="uid"
+            placeholder="INGRESA TU UID AQUI"
+            required
+        >
+
+        <button type="submit">
+            REGISTRAR UID
+        </button>
+
+        <p style="font-size:13px; color:#bbb;">
+            
+        </p>
+    </form>
+
+</div>
+
+<div class="card">
+    <h3>CONFIGURACION REQUERIDA</h3>
+
+    <div class="links">
+        <a href="#">INSTALAR CERTIFICADO</a>
+        <a href="https://discord.gg/" target="_blank">DISCORD</a>
+        <a href="https://youtube.com/" target="_blank">TELEGRAM</a>
+    </div>
+</div>
+
+<footer>
+       BELICOSO SHOP - TU MEJOR OPCION
+</footer>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const uid = document.getElementById("uid").value;
+
+    if(uid.trim() === ""){
+        alert("INGRESA TU UID");
+        return;
+    }
+
+    alert("UID registrado: " + uid);
+});
+</script>
+
+</body>
+</html>
